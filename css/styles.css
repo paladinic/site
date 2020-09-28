@@ -1,0 +1,8 @@
+body {
+  font-family: Arvo
+}
+
+.header h1,
+.header a{
+  display: inline-block;
+}
