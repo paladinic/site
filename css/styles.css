@@ -8,3 +8,7 @@ body {
 .header a{
   display: inline-block;
 }
+
+.header h1 span{
+  color: rgba(25, 235, 52,1);
+}
