@@ -26,21 +26,33 @@ body {
   color: rgb(50, 249, 0);
 }
 
+.footer{
+  position: relative;
+  bottom: 0px;
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+.footer p{
+  margin: 0;
+  padding: 20px;
+  font-size: 0.8em;
+}
+
 .content h2{
   text-align: center;
   background-color: black;
   color: white;
   font-weight: 100;
 }
-
-
 .row{
   display: flex;
   flex-direction: row;
   justify-content:space-around;
   text-align: center;
 }
-
 .row div{
   flex-grow: 1;
   flex-basis: 0;
@@ -49,16 +61,14 @@ body {
 .exp div{
   margin: 3px;
 }
-
 .exp em,
-.code em{
-  display: block;
-  margin: 2px auto;
-  font-size: 0.8em;
-}
-
 .exp img{
   width: 50px;
   display: block;
   margin: 0 auto;
+}
+.code em{
+  display: block;
+  margin: 2px auto;
+  font-size: 0.8em;
 }
