@@ -1,7 +1,8 @@
-body {
+body{
   font-family: Arvo;
   margin: 0;
   padding: 50px 0px 0px;
+  min-height: calc(100vh);
 }
 
 .header{
@@ -76,10 +77,15 @@ body {
   text-align: center;
   display: inline-block;
   margin: 5px;
-  width: 250px;
+  width: 300px;
 }
 .exp img{
   width: 75px;
+  transition: 0.2s;
+}
+.exp img:hover{
+  width: 70px;
+  box-shadow: 0px 0px 8px 3px rgba(36, 255, 0, 0.5);
 }
 .exp em,
 .exp img{
@@ -91,4 +97,7 @@ body {
   display: block;
   margin: 2px auto;
   font-size: 0.8em;
+}
+.code3{
+  color: #595959;
 }
