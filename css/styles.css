@@ -108,21 +108,20 @@ body{
 @media (max-width: 992px){
 
   body{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .header{
-    font-size: 15px;
     display: flex;
     flex-direction: column;
   }
 
   .header a{
-    margin: 15px;
+    margin: 25px;
   }
 
   .content{
-    margin-top: 250px;
+    margin-top: 300px;
   }
 
   .row{
