@@ -87,7 +87,6 @@ body{
 }
 .exp img:hover{
   width: 70px;
-  box-shadow: 0px 0px 8px 3px rgba(36, 255, 0, 0.5);
 }
 .exp em,
 .exp img{
