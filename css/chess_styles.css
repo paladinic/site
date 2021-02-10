@@ -1,0 +1,9 @@
+iframe{
+  height: calc(100vh - 5px);
+  width: 100%;
+  border: 0px !important;
+}
+
+body{
+  background-color: #052900;
+}
