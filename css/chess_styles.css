@@ -1,9 +1,11 @@
 iframe{
-  height: calc(100vh - 5px);
+  height: calc(100vh - 20px);
   width: 100%;
   border: 0px !important;
 }
 
 body{
+  padding: 0px;
+  margin: 0px;
   background-color: #052900;
 }
