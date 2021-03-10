@@ -115,8 +115,11 @@ body{
     flex-direction: column;
   }
 
-  .header a{
-    margin: 25px;
+  .header a,
+  .header h1{
+    margin: 15px auto;
+    font-size: 1.6em;
+
   }
 
   .content{
