@@ -1,18 +1,20 @@
 body{
   font-family: Arvo;
+  /* font-family: 'Montserrat Alternates', sans-serif; */
   margin: 0px !important;
   padding: 0px;
 }
 
 .header{
+  font-family: Arvo;
   background-color: rgba(19, 0, 29, 1);
-  padding: 5px;
+  padding: 5px 0;
   text-align: center;
   margin: 0 auto;
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.5);
+  /* box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.5); */
 }
 
 .header h1,
@@ -26,6 +28,27 @@ body{
 .header a:hover{
   color: rgb(50, 249, 0);
 }
+
+.header  a{
+  margin: 10px 20px 5px;
+}
+
+.header h1{
+ font-weight: 700 !important;
+ width: 100%;
+ margin: 0;
+ border-bottom: 1.5px solid white;
+ background: linear-gradient(45deg, white 50%,#ffff00 , #ff0042,#009cff,#4aff00,white, #3b002c);
+ background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.8s ease-out;
+}
+.header h1:hover {
+ background-position: -200%;
+}
+
+
 
 .footer{
   position: relative;
@@ -44,12 +67,13 @@ body{
 }
 
 .content{
-  margin-top: 50px;
+  margin-top: 68px;
   display: flex;
   flex-direction: column;
   min-height: calc(100vh - 145px)
 }
 .content h2{
+  font-family: Arvo;
   text-align: center;
   background-color: rgba(19, 0, 29, 1);
   /* background-color: black; */
@@ -120,13 +144,19 @@ body{
 
   .header a,
   .header h1{
-    margin: 15px auto;
-    font-size: 1.6em;
+    padding: 15px auto;
 
+  }
+  .header a{
+    font-size: 1em;
+  }
+
+  .header h1{
+    font-size: 1.6em;
   }
 
   .content{
-    margin-top: 300px;
+    margin-top: 76px;
   }
 
   .row{
