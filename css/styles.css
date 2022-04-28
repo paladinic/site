@@ -3,6 +3,7 @@ body{
   /* font-family: 'Montserrat Alternates', sans-serif; */
   margin: 0px !important;
   padding: 0px;
+  color: rgba(19, 0, 29, 1);
 }
 
 .header{
@@ -104,6 +105,8 @@ body{
 }
 .about-me p{
   width: 150px;
+  text-align: center;
+  font-size: 0.95em;
 }
 .about-me img{
   margin: 0px 20px;
