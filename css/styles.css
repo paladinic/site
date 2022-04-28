@@ -58,7 +58,6 @@ body{
   text-align: center;
   color: white;
   background-color: rgba(19, 0, 29, 1);
-  /* background-color: black; */
 }
 .footer p{
   margin: 0;
@@ -76,7 +75,6 @@ body{
   font-family: Arvo;
   text-align: center;
   background-color: rgba(19, 0, 29, 1);
-  /* background-color: black; */
   color: white;
   font-weight: 100;
 }
@@ -92,12 +90,40 @@ body{
   flex-basis: 0;
 }
 
+.about{
+  display: flex;
+  flex: 1 2 auto;
+}
+
+.about-me{
+  flex-grow: 1 !important;
+  width: 340px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  border-right: 3px solid  rgba(19, 0, 29, .5);
+}
+.about-me p{
+  width: 150px;
+}
+.about-me img{
+  margin: 0px 20px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
 .exp{
+  flex-grow: 2 !important;
   display: block;
   width: 100%;
   overflow-x: auto;
   white-space: nowrap;
 }
+
+.code::-webkit-scrollbar,
 .exp::-webkit-scrollbar {
   display: none;
 }
@@ -121,15 +147,49 @@ body{
   margin: 5px auto;
 }
 
-.code em{
+.code{
   display: block;
-  margin: 2px auto;
-  font-size: 0.8em;
-}
-.code3{
-  color: #595959;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
+.code .item{
+  flex-grow: 0;
+  width: 300px;
+  display: inline-block;
+  margin: 0 40px;
+}
+
+.code .github{
+  filter: invert(48%) sepia(13%) saturate(3000%) hue-rotate(230deg) brightness(15%) contrast(80%);
+  width: 30px;
+  margin: 15px;
+  display: inline-block;
+}
+.code .thumbnail{
+  object-fit: contain;
+  width: 300px;
+  height: 150px;
+}
+.code .desc{
+  width: 230px;
+  display: inline-block;
+  white-space:normal;
+  text-align: left;
+  margin: 10px;
+  font-size: 0.9em;
+}
+.code .bottom{
+  width: 300px;
+  display: block;
+}
+
+
+.linea-span{
+  font-family: Montserrat Alternates;
+  font-weight: 800;
+}
 
 @media (max-width: 992px){
 
