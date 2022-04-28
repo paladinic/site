@@ -38,11 +38,11 @@ body{
  width: 100%;
  margin: 0;
  border-bottom: 1.5px solid white;
- background: linear-gradient(45deg, white 50%,#ffff00 , #ff0042,#009cff,#4aff00,white, #3b002c);
+ background: linear-gradient(45deg, white 50%,#ffff00 , #ff0042,#009cff,#4aff00,white);
  background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.8s ease-out;
+  transition: 2s ease-out;
 }
 .header h1:hover {
  background-position: -200%;
@@ -130,7 +130,6 @@ body{
 
 .row::-webkit-scrollbar{
   background: rgba(255, 255, 255, 0);
-  padding: 0 20px;
   display: block;
   height: 10px;
 }
@@ -160,7 +159,6 @@ body{
 .code{
   display: block;
   width: 100%;
-  padding: 0px 5px;
   overflow-x: auto;
   white-space: nowrap;
 }
