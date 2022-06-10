@@ -4,6 +4,13 @@ body{
   margin: 0px !important;
   padding: 0px;
   color: rgba(19, 0, 29, 1);
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+body::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
 }
 
 .header{
