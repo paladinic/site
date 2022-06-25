@@ -247,6 +247,10 @@ body::-webkit-scrollbar { /* WebKit */
     font-size: 1.6em;
   }
 
+  .work-studies {
+    margin-top: 275px
+  }
+  
   .content{
     margin-top: 76px;
   }
