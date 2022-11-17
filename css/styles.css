@@ -95,6 +95,22 @@ body::-webkit-scrollbar { /* WebKit */
   flex-direction: column;
 }
 
+.sidebar .nav_container a{
+  text-decoration: none;
+  color: var(--pale);
+  transition: .2s;
+}
+
+.sidebar .nav_container a:hover{
+  color: var(--bright);
+}
+
+.sidebar .nav_container a.active{
+  text-decoration: underline;
+  color: var(--bright);
+
+}
+
 .sidebar p{
   margin: 20px 25%;
 }
