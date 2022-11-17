@@ -232,3 +232,9 @@ body::-webkit-scrollbar { /* WebKit */
   font-family: Montserrat Alternates;
   font-weight: 800;
 }
+
+@media  (max-width: 460px) {
+  .sidebar{
+    font-size: 75% !important;
+  }
+}
