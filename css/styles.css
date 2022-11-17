@@ -131,7 +131,7 @@ body::-webkit-scrollbar { /* WebKit */
 }
 
 .main_panel h3{
-  border-top: 15px solid var(--pale);
+  border-top: 25px solid var(--dark);
   padding-top: 40vh;
   font-size: 2em;
   margin: 0 ;
