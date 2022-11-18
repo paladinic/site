@@ -196,6 +196,7 @@ body::-webkit-scrollbar { /* WebKit */
 }
 .projects h3{
   text-decoration: underline;
+  margin: 0;
 }
 
 .projects .github{
