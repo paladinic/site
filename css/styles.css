@@ -6,6 +6,17 @@
   --paler: rgba(161, 167, 135, 0.5);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+
 body{
   transition: .2s;
   font-family: Arvo;
@@ -34,7 +45,6 @@ body::-webkit-scrollbar { /* WebKit */
   color: var(--bright);
   padding-top: calc(10vh);
 }
-
 .sidebar h1{
   width: 100%;
   margin: 0;
@@ -47,90 +57,92 @@ body::-webkit-scrollbar { /* WebKit */
  .sidebar h1:hover {
   background-position: -200%;
  }
-
 .sidebar .photo{
-  border: 15px outset var(--bright);
+  border: 10px outset var(--bright);
+  padding: 5px;
   width: 30%;
-  border-radius: 50%;
+  border-radius: 0 0 50% 50%;
   margin: 25px 15px 15px;
 }
-
 .sidebar a{
   color: var(--bright);
 }
-
 .sidebar .links_container{
   margin: 45px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-
 .sidebar .links_container > *{
   padding: 5px 10px;
 }
-
 .sidebar .links_container img{
   width: 20px;
   -webkit-filter: invert(1);
   filter: invert(1);
 }
-
-
-.sidebar .footer_container{
-  margin-top:calc(10vh);
-  font-size: .75em;
+.sidebar .links_container img,
+.sidebar a.cv_link{
+  transition: .2s;
 }
-
+.sidebar .links_container img:hover,
+.sidebar a.cv_link:hover{
+  opacity: .75;
+}
 .sidebar a.cv_link{
   width: 20px;
   display: block;
   text-decoration: none;
   padding-bottom: 0px;
 }
-
 .sidebar .nav_container{
   margin: 45px;
   display: flex;
   flex-direction: column;
 }
-
 .sidebar .nav_container a{
   text-decoration: none;
   color: var(--pale);
   transition: .2s;
 }
-
 .sidebar .nav_container a:hover{
   color: var(--bright);
 }
-
 .sidebar .nav_container a.active{
   text-decoration: underline;
   color: var(--bright);
-
+  
 }
-
 .sidebar p{
   margin: 20px 25%;
 }
-
-
+.sidebar .footer_container{
+  margin-top:calc(10vh);
+  font-size: .75em;
+}
 
 
 .main_panel{
   color: var(--darkest);
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 70%;
   margin: 0;
+  padding: 0;
   margin-left: 30%;
   background-color: var(--bright);
   min-height: calc(100vh);
   text-align: center;
   font-size: 2em;
 }
+.main_panel > div {
+  scroll-snap-align: start;
+  margin-bottom: 60vh;
+  display: flex;
+  flex-direction: column;
+}
 
-.main_panel h3{
+.panel_header{
   border-top: 25px solid var(--dark);
   padding-top: 40vh;
   font-size: 2em;
@@ -138,8 +150,6 @@ body::-webkit-scrollbar { /* WebKit */
   margin-top: 0;
   text-decoration: underline;
 }
-
-
 
 #back_to_top_btn{
   border-radius: 50% 50% 0 0;
@@ -161,22 +171,16 @@ body::-webkit-scrollbar { /* WebKit */
   background-color: var(--dark);
 }
 
-
-.about .exp a img{
+.about a img{
+  border-radius:0 0 50% 50%;
+  border: 15px outset var(--paler);
+  padding: 15px;
   display: block;
   margin: auto;
 }
-
-.about .exp div{
-  margin: 60vh 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.about .exp div > *{
+.about div > *{
   margin: 20px;
 }
-
 
 .code{
   display: flex;
@@ -186,13 +190,15 @@ body::-webkit-scrollbar { /* WebKit */
   white-space: nowrap;
   padding-bottom: 30vh;
 }
-
-.code .item{
+.projects .item{
   border-radius: 5px;
   display: inline-block;
 }
+.projects h3{
+  text-decoration: underline;
+}
 
-.code .github{
+.projects .github{
   filter: invert(48%) sepia(13%) saturate(3000%) hue-rotate(230deg) brightness(15%) contrast(80%);
   width: 40px;
   margin: 10px;
@@ -200,33 +206,29 @@ body::-webkit-scrollbar { /* WebKit */
   display: inline-block;
   text-decoration: none;
 }
-.code a{
+.projects a{
   text-decoration: none;
 }
-
-.code .thumbnail{
+.projects .thumbnail{
   border-radius: 5px;
   max-width: 30%;
   object-fit: contain;
-  padding-bottom: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 60vh;
   transition: .2s;
+  margin: auto;
+  display: block;
 }
-
-
-.code .desc{
+.projects .desc{
   width: 70%;
-  display: inline-block;
+  display: block;
   white-space:normal;
-  text-align: left;
-  margin: 10px;
+  margin: 10px auto;
   font-size: 0.9em;
 }
-.code .bottom{
+.projects .bottom{
   width: 100%;
-  display: block;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
 }
 .linea-span{
   font-family: Montserrat Alternates;
