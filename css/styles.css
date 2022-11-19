@@ -136,7 +136,7 @@ body::-webkit-scrollbar { /* WebKit */
   font-size: 2em;
 }
 .main_panel > div {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   margin-bottom: 60vh;
   display: flex;
   flex-direction: column;
