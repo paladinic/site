@@ -63,6 +63,10 @@ body::-webkit-scrollbar { /* WebKit */
   width: 30%;
   border-radius: 0 0 50% 50%;
   margin: 25px 15px 15px;
+  transition: .3s;
+}
+.sidebar .photo:hover{
+  border-radius: 0 0 47% 47%;
 }
 .sidebar a{
   color: var(--bright);
