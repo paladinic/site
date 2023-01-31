@@ -263,5 +263,9 @@ body::-webkit-scrollbar { /* WebKit */
 @media  (max-width: 460px) {
   .sidebar{
     font-size: 75% !important;
+    height: 100vh;
+  }
+  .panel_header{
+    font-size: 1em;
   }
 }

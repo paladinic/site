@@ -8,86 +8,147 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400;600;800&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <script type="text/javascript" src="js/scripts.js">
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-    <script>
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          document.getElementById("back_to_top_btn").style.bottom = "0px";
-        } else {
-          document.getElementById("back_to_top_btn").style.bottom = "-200px";
-        }
-      }
-      
-      window.onscroll = function() {scrollFunction()};
-
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-      </script>
   </head>
   <body>
     <button onclick="topFunction()" id="back_to_top_btn">&#8593</button>
-    <div class="sidebar">
-      <h1>Claudio Paladini</h1>
-      <img class="photo" src="img/photo.jpg" alt="photo">
-      <p>
-        <strong>Data Scientist</strong>
-      </p>
-      <div class="nav_container">
-        <a href="projects.html">Projects</a>
-        <a class="active" href="index.html">About</a>
-      </div>
-      <div class="links_container">
-        <a href="https://www.linkedin.com/in/claudio-paladini-6290786b/"><img src="img/linkedin_icon.png" alt="linkedin_icon"></a>
-        <a href="https://drive.google.com/file/d/1axpfF_oaunk0Phhq6dw1MAr1uBsUYHTe/view?usp=sharing" class="cv_link" download>CV</a>
-        <a href="https://github.com/paladinic"><img src="img/github_icon.png" alt="github_icon"></a>
-      </div>
-      <div class="footer_container">
-        Claudio Paladini © London  <script>document.write(new Date().getFullYear())</script>
-      </div>
-    </div>
-    <div class="main_panel about">
-      <div class="panel_header">
-        <h3>About</h3>
-      </div>
-      <div class="panel_header">
-        <h3>Tech-stack:</h3>
-      </div>
-      <div>    
-        <h4>Programming Languages:</h4>
-        <div class="tech_stack code_langs"></div>
-        <hr>
-        <h4>Supporting Languages:</h4>
-        <div class="tech_stack other_code_langs"></div>
-        <hr>
-        <h4>Frameworks:</h4>
-        <div class="tech_stack code_fws"></div>
-        <hr>
-        <h4>Tools:</h4>
-        <div class="tech_stack tools"></div>
-        <hr>
-      </div>
-      <div class="panel_header">
-        <h3>Hobbies:</h3>
-      </div>
-      <div class="bath">
-        <h4>Bath University</h4>
-        <em>MSc Entrepreneurship & Management</em>
-        <em>2015 - 2016</em>
-        <a href="https://www.bath.ac.uk/">
-          <img src="https://media-exp1.licdn.com/dms/image/C510BAQG9IUn01EIOzQ/company-logo_200_200/0?e=2159024400&v=beta&t=8GEBPD3vu_8TYm3Qxuzyw7FeShmTSSWWi9mTOSAjSfw" alt="">
-        </a>
-      </div>
-      <div class="rhul">
-        <h4>Royal Holloway</h4>
-        <em>BSc Economics</em>
-        <em>2012 - 2015</em>
-        <a href="https://www.royalholloway.ac.uk/">
-          <img src="https://media-exp1.licdn.com/dms/image/C560BAQHOG9eQ6ya4SQ/company-logo_200_200/0?e=2159024400&v=beta&t=-DYyYgj-kP6tbl7tVTCtMCjbFtnJuFdHdrUpKxamPls" alt="">
-        </a>
-      </div>
+        <div class="sidebar">
+          <h1>Claudio Paladini</h1>
+          <img class="photo" src="img/photo.jpg" alt="photo">
+          <p><strong>Data Scientist</strong></p>
+          <div class="nav_container">
+            <a class="active" href="index.html">Projects</a>
+            <a href="about.html">About</a>
+          </div>
+          <div class="links_container">
+            <a href="https://www.linkedin.com/in/claudio-paladini-6290786b/"><img src="img/linkedin_icon.png" alt="linkedin_icon"></a>
+            <a href="https://drive.google.com/file/d/1axpfF_oaunk0Phhq6dw1MAr1uBsUYHTe/view?usp=sharing" class="cv_link" download>CV</a>
+            <a href="https://github.com/paladinic"><img src="img/github_icon.png" alt="github_icon"></a>
+          </div>
+          <div class="footer_container">
+            Claudio Paladini © London  <script>document.write(new Date().getFullYear())</script>
+          </div>
+        </div>
+        <div class="main_panel projects">
+          <div class="panel_header">
+            <h3>Projects</h3>
+          </div>
+          <div class='item linea'>
+            <h3 class="linea-span">LINEA</h3>
+            <a href="https://www.linea-r.org/">
+              <img class='thumbnail' src="img/linea.png" alt="">
+            </a>
+            <div class="bottom">
+              <a href="https://github.com/paladinic/linea">
+                <img class='github' src='https://cdn-icons-png.flaticon.com/512/2111/2111432.png'/>
+              </a>
+              <div class="desc">
+                <span class="linea-span">LINEA</span> is an R library designed as an interface to accelerate linear regression modelling.
+              </div>
+            </div>
+          </div>
+          <div class='item chess'>
+            <h3>Chess.com Dashboard</h3>
+            <a href="https://paladinic.shinyapps.io/shiny_chess/">
+              <img class='thumbnail' src="img/chess_logo.png" alt="">
+            </a>
+            <div class="bottom">
+              <a href="https://github.com/paladinic/shiny_chess">
+                <img class='github' src='https://cdn-icons-png.flaticon.com/512/2111/2111432.png'/>
+              </a>
+              <div class="desc">
+                The <b>Chess.com Dashboard</b> is a Shiny app that analyses a chess.com's user's games.
+              </div>
+            </div>
+          </div>
+          <div class='item grid-game'>
+            <h3>GRID-GAME</h3>
+            <a href="https://paladinic.shinyapps.io/grid-game/">
+              <img class='thumbnail' src="img/grid-game.png" alt="">
+            </a>
+            <div class="bottom">
+              <a href="https://github.com/paladinic/grid-game">
+                <img class='github' src='https://cdn-icons-png.flaticon.com/512/2111/2111432.png'/>
+              </a>
+              <div class="desc">
+                <b>GRID-GAME</b> is a simple pacman-like game with a live leaderboard, all built in Shiny.
+              </div>
+            </div>
+          </div>
+          <div class='item letter-guesser'>
+            <h3>Letter Guesser</h3>
+            <a href="https://share.streamlit.io/paladinic/letter-guesser/main/app.py">
+              <img class='thumbnail' src="img/letter-guesser.png" alt="">
+            </a>
+            <div class="bottom">
+              <a href="https://github.com/paladinic/letter-guesser">
+                <img class='github' src='https://cdn-icons-png.flaticon.com/512/2111/2111432.png'/>
+              </a>
+              <div class="desc">
+                The <b>Letter Guesser</b> is a simple neural network, deployed using Streamlit.io, that recognises letters.
+              </div>
+            </div>
+          </div>
+          <div class='item flask-scraper'>
+            <h3>Flask Scraper</h3>
+            <a href="https://paladinic-flask-scraper.herokuapp.com/">
+              <img class='thumbnail' src="img/flask-scraper.png" alt="">
+            </a>
+            <div class="bottom">
+              <a href="https://github.com/paladinic/flask_scraper">
+                <img class='github' src='https://cdn-icons-png.flaticon.com/512/2111/2111432.png'/>
+              </a>
+              <div class="desc">
+                The <b>Flask Scraper</b> is a Flask app that will scrape spcecific elements of a given website.
+              </div>
+            </div>
+          </div>
+          <div class='item cran_logs'>
+            <h3>CRAN LOGS</h3>
+            <a href="https://paladinic.shinyapps.io/cran_logs/">
+              <img class='thumbnail' src="img/cran_logs.PNG" alt="">
+            </a>
+            <div class="bottom">
+              <a href="https://github.com/paladinic/cran_logs">
+                <img class='github' src='https://cdn-icons-png.flaticon.com/512/2111/2111432.png'/>
+              </a>
+              <div class="desc">
+                <b>CRAN LOGS</b> allows users to visualise and download data concerning packages of the R programming language.
+              </div>
+            </div>
+          </div>
+          <div class='item gtrends'>
+            <h3>Google Trends (lite)</h3>
+            <a href="https://shiny-gtrends-pthhjlqrzq-uc.a.run.app/">
+              <img class='thumbnail' src="img/gtrends.png" alt="">
+            </a>
+            <div class="bottom">
+              <a href="https://github.com/paladinic/shiny_gtrends">
+                <img class='github' src='https://cdn-icons-png.flaticon.com/512/2111/2111432.png'/>
+              </a>
+              <div class="desc">
+                <b>Google Trends (lite) in Shiny</b> allows for searching more than 5 keywords at once on Google Trends.
+              </div>
+            </div>
+          </div>
+          <div class='item geopandas'>
+            <h3>Geo-pd.ipynb</h3>
+            <a href="https://github.com/paladinic/python-geo-basics">
+              <img class='thumbnail' src="img/geopandas.png" alt="">
+            </a>
+            <div class="bottom">
+              <a href="https://github.com/paladinic/python-geo-basics">
+                <img class='github' src='https://cdn-icons-png.flaticon.com/512/2111/2111432.png'/>
+              </a>
+              <div class="desc">
+                A notebook combining geopandas, shapely, folium, and the mapbox api for key <b>GIS operations</b>.
+              </div>
+            </div>
+          </div>
+        </div>
       <script type="text/javascript" src="js/scripts.js">
       </script>
-  </body>
+    </body>
+</html>
