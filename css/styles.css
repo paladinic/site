@@ -11,9 +11,9 @@ html {
 }
 
 body, html {
-  scroll-snap-type: mandatory;
+  scroll-snap-type: proximity;
   scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 
@@ -140,7 +140,7 @@ body::-webkit-scrollbar { /* WebKit */
   font-size: 2em;
 }
 .main_panel > div {
-  scroll-snap-align: center;
+  /* scroll-snap-align: center; */
   margin-bottom: 60vh;
   display: flex;
   flex-direction: column;
@@ -163,6 +163,16 @@ body::-webkit-scrollbar { /* WebKit */
   text-align:center;
   margin-left: 40%;
   font-size: .5em;
+}
+.tech_stack{
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto 20px !important;
+}
+.tech_stack span{
+  display: block;
 }
 
 #back_to_top_btn{
