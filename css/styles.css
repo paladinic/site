@@ -222,6 +222,10 @@ body::-webkit-scrollbar { /* WebKit */
   text-decoration: underline;
   margin: 0;
 }
+.projects img{
+  max-width: 400px;
+  border-radius: 10px;
+}
 
 .projects .github{
   filter: invert(48%) sepia(13%) saturate(3000%) hue-rotate(230deg) brightness(15%) contrast(80%);
