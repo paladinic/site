@@ -69,7 +69,7 @@ const hobbies = [
   "Electronics",
   "3D Printing",
   "Music",
-  "Travelling"
+  "Rock Climbing"
 ];
 
 function randRGB(max=200){
