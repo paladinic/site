@@ -168,6 +168,7 @@ body::-webkit-scrollbar { /* WebKit */
   margin-left: 40%;
   font-size: .5em;
 }
+.hobbies,
 .tech_stack{
   display: flex;
   width: 80%;
@@ -272,8 +273,8 @@ body::-webkit-scrollbar { /* WebKit */
 @media  (max-width: 600px) {
   .sidebar .nav_container,
   .sidebar h1,
-  .sidebar img,
-  .sidebar p,
+  .sidebar .photo,
+  .sidebar .ds_label,
   .sidebar .links_container,
   .sidebar .footer_container{
     transform: rotate(-90deg);
