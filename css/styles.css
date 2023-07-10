@@ -274,7 +274,6 @@ body::-webkit-scrollbar { /* WebKit */
   .sidebar .nav_container,
   .sidebar h1,
   .sidebar .photo,
-  .sidebar .ds_label,
   .sidebar .links_container,
   .sidebar .footer_container{
     transform: rotate(-90deg);
@@ -285,5 +284,8 @@ body::-webkit-scrollbar { /* WebKit */
   }
   .panel_header{
     font-size: 1em;
+  }
+  .sidebar .ds_label{
+    display: none;
   }
 }
