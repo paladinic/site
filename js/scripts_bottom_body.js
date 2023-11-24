@@ -22,12 +22,13 @@ const code_fws = [
   "streamlit",
   "pandas",
   "numpy",
-  "react",
-  "node",
   "shiny",
   "plotly",
   "leaflet",
-  "tidyverse"
+  "tidyverse",
+  "react",
+  "node",
+  "capacitor.js"
 ];
 
 const tools = [

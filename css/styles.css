@@ -273,14 +273,14 @@ body::-webkit-scrollbar { /* WebKit */
 @media  (max-width: 600px) {
   .sidebar .nav_container,
   .sidebar h1,
-  .sidebar .photo,
+  /* .sidebar .photo, */
   .sidebar .links_container,
   .sidebar .footer_container{
     transform: rotate(-90deg);
     padding: 10% 0;
   }
   .sidebar h1{
-    font-size: 25px;
+    font-size: 20px;
   }
   .panel_header{
     font-size: 1em;
