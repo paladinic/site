@@ -6,14 +6,8 @@
   --paler: rgba(161, 167, 135, 0.5);
 }
 
-html {
-  scroll-behavior: smooth;
-}
 
 body, html {
-  scroll-snap-type: proximity;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y proximity;
   width: 100%;
 }
 
@@ -151,7 +145,6 @@ body::-webkit-scrollbar { /* WebKit */
 }
 
 .panel_header{
-  scroll-snap-align: start !important;
   border-top: 25px solid var(--dark);
   padding-top: 40vh;
   font-size: 2em;
